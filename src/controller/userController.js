@@ -1981,7 +1981,7 @@ apicontroller.changePassword = async (req, res) => {
 
 apicontroller.relationship = async (req, res) => {
   try {
-    const data = require('../../utils/data.json');
+    const data = require('../utils/data.json');
     console.log(data, 'relationship')
     res.status(200).json(data.relationship)
   } catch (error) {

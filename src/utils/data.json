@@ -1,0 +1,44 @@
+{
+  "relationship": [
+    {
+      "value": "Father",
+      "keyE": "Father",
+      "keyG": "પિતા"
+    },
+    {
+      "value": "Mother",
+      "keyE": "Mother",
+      "keyG": "માતા"
+    },
+    {
+      "value": "Husband",
+      "keyE": "Husband",
+      "keyG": "પતિ"
+    },
+    {
+      "value": "Wife",
+      "keyE": "Wife",
+      "keyG": "પત્ની"
+    },
+    {
+      "value": "Son",
+      "keyE": "Son",
+      "keyG": "પુત્ર"
+    },
+    {
+      "value": "Daughter",
+      "keyE": "Daughter",
+      "keyG": "પુત્રી"
+    },
+    {
+      "value": "Grandfather",
+      "keyE": "Grandfather",
+      "keyG": "દાદા"
+    },
+    {
+      "value": "Grandmother",
+      "keyE": "Grandmother",
+      "keyG": "દાદી"
+    }
+  ]
+}
