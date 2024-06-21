@@ -1573,7 +1573,7 @@ apicontroller.listaboutus = async (req, res) => {
         AboutusData = await aboutus.find({ deleted_at: null }, { title: 1, description: 1, image: 1 }).sort({ created_at: -1 });
         cache.set('aboutus', JSON.stringify(AboutusData));
       }
-      // console.log(object)
+      console.log(AboutusData)
       return res.status(200).json({ AboutusData });
     } else {
       if (cache.has('aboutus')) {
