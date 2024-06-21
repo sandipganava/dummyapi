@@ -27,8 +27,8 @@ router.post('/user_register', userController.user_register);
 router.post('/profile_image/:id', userController.profile_image);
 router.post('/profile_banner/:id',  userController.profile_banner);
 
-router.post('/search', checkApiKey, userController.search);
-router.post('/villagebyuser', checkApiKey, userController.villageByUser);
+router.post('/search',  userController.search);
+router.post('/villagebyuser',  userController.villageByUser);
 router.post('/addchildUser/:id', userController.addchildUser);
 router.post('/addfamily/:id', userController.addfamily);
 router.get('/user-list',  userController.user_list); // for app site listing

@@ -518,6 +518,7 @@ apicontroller.search = async (req, res) => {
 
 
 apicontroller.villageByUser = async (req, res) => {
+  console.log("called villageByUser")
   try {
     const searchValue = req.body.searchValue;
     const location_id = new BSON.ObjectId(searchValue)
@@ -560,13 +561,6 @@ apicontroller.villageByUser = async (req, res) => {
     });
     console.log(Useradd, 'user')
     res.status(200).json(Useradd)
-
-    // const searchValue = req.body.searchValue;
-    // // const Useradd = await user.find({ parent_id: null, deleted_at: null, payment_id: { $ne: null } });
-    // const usersdata = await user.find({ locations_id: searchValue, parent_id: null, deleted_at: null, payment_id: { $ne: null } })
-    // usersdata.sort((a, b) => a.firstname.localeCompare(b.firstname, 'en', { sensitivity: 'base' }));
-    // console.log(usersdata, 'usersdata')
-    // res.status(200).json(usersdata)
 
   } catch (error) {
     console.error('Error during search:', error);
@@ -732,7 +726,6 @@ apicontroller.addchildUser = async (req, res) => {
 
 
 apicontroller.user_list = async (req, res) => {
-
   try {
     // const paymentNullData = await user.deleteMany({ payment_id: null , parent_id: null });
     // const Useradd = await user.find({ parent_id: null, deleted_at: null, payment_id: { $ne: null } });
